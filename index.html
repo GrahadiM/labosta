@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree - @username</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons (Untuk icon tombol) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Konfigurasi Tailwind untuk mendeteksi mode gelap via class 'dark'
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-black dark:bg-neutral-950 dark:text-white min-h-screen transition-colors duration-300">
+
+    <!-- Tombol Toggle Light/Dark Mode (Pojok Kanan Atas) -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="theme-toggle" class="p-2.5 rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 hover:scale-105 transition-transform">
+            <i id="theme-icon" data-lucide="moon" class="w-5 h-5"></i>
+        </button>
+    </div>
+
+    <!-- Container Utama (Mobile First Max Width) -->
+    <main class="max-w-md mx-auto px-6 py-12 flex flex-col items-center min-h-screen justify-between">
+        
+        <!-- Bagian Profil & Tombol -->
+        <div class="w-full flex flex-col items-center">
+            <!-- Profile Image -->
+            <div class="w-24 h-24 rounded-full overflow-hidden border-2 border-black dark:border-white mb-4 p-1">
+                <!-- Ganti src dengan foto Anda, atau gunakan file lokal jika di-push ke Vercel -->
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=256&auto=format&fit=crop" alt="Profile Picture" class="w-full h-full object-cover rounded-full">
+            </div>
+
+            <!-- Nama & Biodata -->
+            <h1 class="text-xl font-bold tracking-tight mb-1">Nama Anda / Brand</h1>
+            <p class="text-sm text-neutral-500 dark:text-neutral-400 text-center max-w-sm mb-8">
+                Tuliskan biodata singkat Anda di sini. Jelaskan apa yang Anda lakukan atau toko apa ini dalam 1-2 kalimat.
+            </p>
+
+            <!-- Grid/List Tombol Links -->
+            <div class="w-full space-y-4">
+                
+                <!-- WhatsApp Admin 1 -->
+                <a href="https://wa.me/6285887017102?text=Halo%20Admin%201" target="_blank" class="flex items-center justify-between w-full p-4 rounded-xl border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-medium text-sm group">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5"></i>
+                        <span>WhatsApp Admin 1</span>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+
+                <!-- WhatsApp Admin 2 -->
+                <a href="https://wa.me/6287788051755?text=Halo%20Admin%202" target="_blank" class="flex items-center justify-between w-full p-4 rounded-xl border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-medium text-sm group">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5"></i>
+                        <span>WhatsApp Admin 2</span>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://instagram.com/labosta.id" target="_blank" class="flex items-center justify-between w-full p-4 rounded-xl border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-medium text-sm group">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                        <span>Instagram</span>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+
+                <!-- TikTok -->
+                <a href="https://tiktok.com/@labosta.co" target="_blank" class="flex items-center justify-between w-full p-4 rounded-xl border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-medium text-sm group">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="video" class="w-5 h-5"></i>
+                        <span>TikTok</span>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+
+                <!-- Shopee -->
+                <a href="https://shopee.co.id/labos.ta" target="_blank" class="flex items-center justify-between w-full p-4 rounded-xl border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-medium text-sm group">
+                    <div class="flex items-center gap-3">
+                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                        <span>Shopee Mall</span>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </a>
+
+            </div>
+        </div>
+
+        <!-- Footer / Branding Minimalis -->
+        <footer class="mt-12 text-xs text-neutral-400 dark:text-neutral-600 tracking-wider">
+            &copy; 2026 HADOY DEV. ALL RIGHTS RESERVED.
+        </footer>
+
+    </main>
+
+    <!-- Script Logic untuk Icons & Theme Toggle -->
+    <script>
+        // Inisialisasi Lucide Icons
+        lucide.createIcons();
+
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        // Cek preferensi awal (local storage atau preferensi sistem OS)
+        if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeIcon.setAttribute('data-lucide', 'sun');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeIcon.setAttribute('data-lucide', 'moon');
+        }
+        lucide.createIcons(); // Re-render icon setelah perubahan attribute
+
+        // Fungsi Toggle Manual
+        themeToggleBtn.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+                themeIcon.setAttribute('data-lucide', 'moon');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+                themeIcon.setAttribute('data-lucide', 'sun');
+            }
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
