@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="id" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LABOSTA - Links</title>
-    <!-- Link to the favicon image -->
+    
+    <title>LABOSTA | Brand Baju Streetwear Lokal Pria & Wanita Original</title>
+    <meta name="description" content="Beli baju streetwear lokal berkualitas hanya di LABOSTA Official. Koleksi pakaian limited drop, kaos oversize, hoodie premium, dan baju distro dengan desain bold khas lokal pride.">
+    <meta name="keywords" content="baju streetwear lokal, brand baju lokal, pakaian pria distro, kaos oversize lokal, hoodie streetwear indonesia, labosta, beli baju streetwear, pakaian brand lokal, lokal pride streetwear">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="LABOSTA">
+    <link rel="canonical" href="https://labosta.id">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://labosta.id">
+    <meta property="og:title" content="LABOSTA | Brand Baju Streetwear Lokal Pria & Wanita Original">
+    <meta property="og:description" content="Koleksi eksklusif pakaian streetwear lokal premium. Limited drop, stay bold, stay real. Amankan outfit lokal pride kamu sekarang!">
+    <meta property="og:image" content="assets/images/logo.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://labosta.id">
+    <meta property="twitter:title" content="LABOSTA | Brand Baju Streetwear Lokal Pria & Wanita Original">
+    <meta property="twitter:description" content="Koleksi eksklusif pakaian streetwear lokal premium. Limited drop, stay bold, stay real. Amankan outfit lokal pride kamu sekarang!">
+    <meta property="twitter:image" content="assets/images/logo.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ClothingStore",
+      "name": "LABOSTA",
+      "image": "assets/images/logo.jpg",
+      "description": "Brand baju streetwear lokal dengan kualitas premium dan desain eksklusif limited drop.",
+      "url": "https://labosta.id",
+      "telephone": "+6285887017102",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bogor",
+        "addressCountry": "ID"
+      },
+      "sameAs": [
+        "https://instagram.com/labosta.id",
+        "https://tiktok.com/@labosta.co",
+        "https://shopee.co.id/labos.ta"
+      ]
+    }
+    </script>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
     <script>
         tailwind.config = {
             darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'marquee': 'marquee 15s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' }
+                        }
+                    }
+                }
+            }
         }
     </script>
     <style>
@@ -18,73 +73,98 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        /* Menghilangkan scrollbar pada running text marquee */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
-<body class="bg-white text-black dark:bg-neutral-950 dark:text-white min-h-screen transition-colors duration-300">
+<body class="bg-white text-black dark:bg-neutral-950 dark:text-white min-h-screen transition-colors duration-300 flex flex-col justify-between">
 
-    <div class="fixed top-4 right-4 z-50">
-        <button id="theme-toggle" class="p-2.5 rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 hover:scale-105 transition-transform flex items-center justify-center w-10 h-10">
+    <div class="w-full overflow-hidden bg-black text-white dark:bg-white dark:text-black py-2.5 uppercase text-[10px] tracking-[0.25em] font-extrabold whitespace-nowrap select-none hide-scrollbar border-b border-neutral-800 dark:border-neutral-200">
+        <div class="animate-marquee inline-block pl-[100%]">
+            NEW DROP OUT NOW • NO RESTOCK • LOKAL PRIDE WITH ATTITUDE • STAY REAL • NEW DROP OUT NOW • NO RESTOCK • LOKAL PRIDE WITH ATTITUDE • STAY REAL •&nbsp;
+        </div>
+    </div>
+
+    <div class="fixed top-16 right-4 z-50">
+        <button id="theme-toggle" class="p-2.5 rounded-full border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 hover:scale-105 transition-transform flex items-center justify-center w-10 h-10 shadow-sm">
             <i id="theme-icon" class="fa-solid fa-moon text-base"></i>
         </button>
     </div>
 
-    <main class="max-w-md mx-auto px-6 py-12 flex flex-col items-center min-h-screen justify-between">
+    <main class="max-w-md mx-auto px-6 pt-8 pb-12 flex flex-col items-center flex-grow w-full">
         
         <div class="w-full flex flex-col items-center">
             
-            <div class="w-28 h-28 overflow-hidden border border-black dark:border-white mb-6 p-1.5 rounded-[.8rem]">
-                <img src="assets/images/logo.jpg" alt="LABOSTA Logo" class="w-full h-full object-cover rounded-[.6rem] bg-black">
+            <div class="w-28 h-28 overflow-hidden border border-black dark:border-white mb-4 p-1.5 rounded-[.8rem]">
+                <img src="assets/images/logo.jpg" alt="LABOSTA - Tempat Jual Baju Streetwear Lokal Paling Populer" class="w-full h-full object-cover rounded-[.6rem] bg-black">
             </div>
 
-            <h1 class="text-2xl font-extrabold tracking-wider uppercase mb-1">LABOSTA</h1>
-            <p class="text-xs tracking-widest text-neutral-700 dark:text-neutral-500 text-center uppercase max-w-xs mb-4">
+            <div class="flex items-center gap-2 px-3 py-1 border border-black dark:border-white rounded-full text-[9px] tracking-[0.15em] font-black uppercase mb-6 select-none bg-neutral-50 dark:bg-neutral-900">
+                <span class="w-2 h-2 rounded-full bg-red-600 dark:bg-red-500 inline-block animate-pulse"></span>
+                LIMITED DROP AVAILABLE
+            </div>
+
+            <h1 class="text-3xl font-black tracking-widest uppercase mb-2">LABOSTA</h1>
+            <p class="text-xs tracking-widest text-neutral-500 dark:text-neutral-400 text-center uppercase max-w-xs mb-6 font-medium">
                 Official Links & Customer Service
             </p>
-            <p class="text-left text-sm font-medium tracking-widest mb-10">
-                LOKAL PRIDE💥 <br>
-                Streetwear lokal dengan attitude 🔥 <br>
-                Limited drop – no restock <br>
-                Stay bold. Stay real.
+            
+            <p class="text-center text-xs font-semibold tracking-[0.12em] leading-relaxed mb-8 border-y border-neutral-200 dark:border-neutral-800 py-3 w-full uppercase">
+                LOKAL PRIDE💥<br>
+                Streetwear dengan attitude 🔥<br>
+                Limited drop – no restock<br>
+                Stay bold &bull; Stay real.
             </p>
 
-            <div class="w-full space-y-4">
+            <div class="sr-only">
+                <h2>Pusat Penjualan Pakaian & Baju Streetwear Distro Original</h2>
+                <p>LABOSTA merupakan salah satu brand baju lokal terkemuka yang berfokus pada kultur streetwear fashion fashion pria dan wanita di Indonesia. Kami menyediakan kaos oversized bergaya hip-hop modern, jaket hoodie, outerwear trendi, serta kaos distro premium bermutu tinggi dengan harga kompetitif. Semua rilisan pakaian kami diproduksi secara terbatas demi menjaga eksklusivitas penampilan Anda.</p>
+            </div>
+
+            <div class="w-full space-y-5">
                 
-                <a href="https://wa.me/6285887017102?text=Halo%20Admin%201" target="_blank" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-semibold text-xs tracking-wider uppercase group">
+                <a href="https://wa.me/6285887017102?text=Halo%20Admin%201%20Saya%20Mau%20Order%20Baju%20Labosta" target="_blank" rel="noopener" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-white text-black dark:bg-transparent dark:text-white transition-all font-bold text-xs tracking-wider uppercase group hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-[4px_4px_0px_0px_#000] dark:hover:shadow-[4px_4px_0px_0px_#fff]">
                     <div class="flex items-center gap-3">
                         <i class="fa-brands fa-whatsapp text-base w-4 text-center"></i>
-                        <span>WhatsApp Admin 1</span>
+                        <span>WhatsApp Admin 1 (Order Baju)</span>
                     </div>
                     <i class="fa-solid fa-sparkles text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:rotate-45"></i>
                 </a>
 
-                <a href="https://wa.me/6287788051755?text=Halo%20Admin%202" target="_blank" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-semibold text-xs tracking-wider uppercase group">
+                <a href="https://wa.me/627788051755?text=Halo%20Admin%202%20Saya%20Mau%20Order%20Baju%20Labosta" target="_blank" rel="noopener" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-white text-black dark:bg-transparent dark:text-white transition-all font-bold text-xs tracking-wider uppercase group hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-[4px_4px_0px_0px_#000] dark:hover:shadow-[4px_4px_0px_0px_#fff]">
                     <div class="flex items-center gap-3">
                         <i class="fa-brands fa-whatsapp text-base w-4 text-center"></i>
-                        <span>WhatsApp Admin 2</span>
+                        <span>WhatsApp Admin 2 (Kemitraan)</span>
                     </div>
                     <i class="fa-solid fa-sparkles text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:rotate-45"></i>
                 </a>
 
-                <a href="https://instagram.com/labosta.id" target="_blank" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-semibold text-xs tracking-wider uppercase group">
+                <a href="https://instagram.com/labosta.id" target="_blank" rel="noopener" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-white text-black dark:bg-transparent dark:text-white transition-all font-bold text-xs tracking-wider uppercase group hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-[4px_4px_0px_0px_#000] dark:hover:shadow-[4px_4px_0px_0px_#fff]">
                     <div class="flex items-center gap-3">
                         <i class="fa-brands fa-instagram text-base w-4 text-center"></i>
-                        <span>Instagram</span>
+                        <span>Katalog Instagram</span>
                     </div>
                     <i class="fa-solid fa-sparkles text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:rotate-45"></i>
                 </a>
 
-                <a href="https://tiktok.com/@labosta.co" target="_blank" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-semibold text-xs tracking-wider uppercase group">
+                <a href="https://tiktok.com/@labosta.co" target="_blank" rel="noopener" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-white text-black dark:bg-transparent dark:text-white transition-all font-bold text-xs tracking-wider uppercase group hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-[4px_4px_0px_0px_#000] dark:hover:shadow-[4px_4px_0px_0px_#fff]">
                     <div class="flex items-center gap-3">
                         <i class="fa-brands fa-tiktok text-base w-4 text-center"></i>
-                        <span>TikTok</span>
+                        <span>TikTok Video Reviews</span>
                     </div>
                     <i class="fa-solid fa-sparkles text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:rotate-45"></i>
                 </a>
 
-                <a href="https://shopee.co.id/labos.ta" target="_blank" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-transparent hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-semibold text-xs tracking-wider uppercase group">
+                <a href="https://shopee.co.id/labos.ta" target="_blank" rel="noopener" class="flex items-center justify-between w-full p-4 rounded-full border border-black dark:border-white bg-white text-black dark:bg-transparent dark:text-white transition-all font-bold text-xs tracking-wider uppercase group hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-[4px_4px_0px_0px_#000] dark:hover:shadow-[4px_4px_0px_0px_#fff]">
                     <div class="flex items-center gap-3">
                         <i class="fa-solid fa-bag-shopping text-base w-4 text-center"></i>
-                        <span>Shopee Store</span>
+                        <span>Beli di Shopee Store</span>
                     </div>
                     <i class="fa-solid fa-sparkles text-sm opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:rotate-45"></i>
                 </a>
@@ -92,7 +172,7 @@
             </div>
         </div>
 
-        <footer class="mt-12 text-[10px] text-neutral-400 dark:text-neutral-600 tracking-[0.2em] uppercase font-medium">
+        <footer class="mt-16 text-[9px] text-neutral-400 dark:text-neutral-600 tracking-[0.25em] uppercase font-bold select-none text-center">
             &copy; 2026 LABOSTA. ALL RIGHTS RESERVED.
         </footer>
 
@@ -102,7 +182,6 @@
         const themeToggleBtn = document.getElementById('theme-toggle');
         const themeIcon = document.getElementById('theme-icon');
 
-        // Fungsi utilitas untuk mengganti ikon Font Awesome
         function updateIcon(isDark) {
             if (isDark) {
                 themeIcon.className = 'fa-solid fa-sun text-base';
@@ -111,7 +190,6 @@
             }
         }
 
-        // Cek preferensi awal
         if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
             updateIcon(true);
@@ -120,7 +198,6 @@
             updateIcon(false);
         }
 
-        // Fungsi Toggle Manual
         themeToggleBtn.addEventListener('click', () => {
             if (document.documentElement.classList.contains('dark')) {
                 document.documentElement.classList.remove('dark');
